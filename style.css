@@ -6,6 +6,10 @@ body, html {
   height: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -110,8 +114,8 @@ nav ul {
 }
 
 .features .item {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,7 +146,6 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 100px;
-  margin-top: 100px;
 }
 
 .service li {
@@ -204,7 +207,6 @@ footer {
 }
 
 .order .container {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,6 +308,44 @@ label a {
 
 label a:hover {
   text-decoration: none;
+}
+
+#map {
+  height: 300px;
+  width: 50%;
+  margin-bottom: 100px;
+  float: left;
+  margin-right: 20px;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.about li:hover {
+  background:none;
+}
+
+.about li:hover a {
+  color: rgba(12, 74, 85, .9);
+}
+
+.another {
+  clear: both;
+}
+
+.another ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.another li:last-child {
+  margin-right: 0;
+}
+
+.inner li:hover {
+  background: none;
 }
 
 :hover:not(:focus)::-webkit-input-placeholder {
